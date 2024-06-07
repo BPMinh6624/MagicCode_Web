@@ -1,97 +1,83 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <!-- <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.2/css/all.min.css"> -->
-    <!-- CSS -->
-    <!-- <link rel="stylesheet" href="./assets/css/base.css" class="" />
-    <link rel="stylesheet" href="./assets/css/header.css" class="" />
-    <link rel="stylesheet" href="./assets/css/main.css" class="" />
-    <link rel="stylesheet" href="./assets/css/footer.css" class="" />
-    <link rel="stylesheet" href="./assets/css/hover.css" class="" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" /> -->
-    <link rel="stylesheet" href="./assets/index.css" class="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/index.css" />
+  <link rel="stylesheet" href="./assets/_footer.scss" />
+  
+  <!-- FONT -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="icon" type="image/x-icon" href="./assets/img/magiccode.png" />
+  <!-- JavaScript -->
+  <script
+    type="text/javascript"
+    src="https://www.gstatic.com/charts/loader.js"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 
-    <!-- BOOTSTRAP -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    /> -->
-    <!-- FONT -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="./assets/img/magiccode.png" />
-    <!-- JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-
-    <title>MagicCode</title>
-  </head>
-  <body >
-    <div id="wrapper">
-      <!-- PHẦN NAVBAR -->
-      <nav class="navbar gird__row">
-        <ul class="navbar__item gird__row">
-          <li class="item title-font navbar__item--logo">
-            <img src="./assets/img/magiccode.png" alt="" class="logo" />
-          </li>
-          <li class="item">
-            <div class="checkbox">
-              <input class="tgl" id="toggle" type="checkbox" />
-              <label class="tgl-btn" for="toggle"> </label>
-            </div>
-          </li>
-        </ul>
-        <ul class="navbar__item gird__row">
-          <li class="item">
-            <a class="header__a__item" href="">Home</a>
-          </li>
-          <li class="item">
-            <a class="header__a__item" href="">Courses</a>
-          </li>
-          <li class="item">
-            <a class="header__a__item" href="">Form</a>
-          </li>
-          <li class="item">
-            <a class="header__a__item" href="">Other</a>
-          </li>
-          <li class="item">
-            <a class="header__a__item" href="">Other</a>
-          </li>
-        </ul>
-        <ul class="navbar__item gird__row">
-          <li class="item">
-            <i class="icon_main fa-solid fa-magnifying-glass"></i>
-          </li>
-          <li class="item">
-            <a class="head header__a__item" href="">Login</a>
-          </li>
-          <li class="item">
-            <button class="button">Regiter</button>
-          </li>
-        </ul>
-      </nav>
-      <!-- END NAVBAR -->
-      <!-- PHẦN HEADER -->
+  <title>MagicCode</title>
+</head>
+<body>
+  <div id="wrapper">
+    <!-- PHẦN NAVBAR -->
+    <nav class="navbar flex-row">
+      <ul class="navbar__item flex-row">
+        <li class="item title-font navbar__item--logo">
+          <img src="./assets/img/magiccode.png" alt="" class="logo" />
+        </li>
+        <li class="item">
+          <div class="checkbox">
+            <input class="tgl" id="toggle" type="checkbox" />
+            <label class="tgl-btn" for="toggle"> </label>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar__item flex-row">
+        <li class="item">
+          <a class="header__a__item" href="">Home</a>
+        </li>
+        <li class="item">
+          <a class="header__a__item" href="">Courses</a>
+        </li>
+        <li class="item">
+          <a class="header__a__item" href="">Form</a>
+        </li>
+        <li class="item">
+          <a class="header__a__item" href="">Other</a>
+        </li>
+        <li class="item">
+          <a class="header__a__item" href="">Other</a>
+        </li>
+      </ul>
+      <ul class="navbar__item flex-row">
+        <li class="item">
+          <i class="icon_main fa-solid fa-magnifying-glass"></i>
+        </li>
+        <li class="item">
+          <a class="head header__a__item" href="">Login</a>
+        </li>
+        <li class="item">
+          <button class="button">Register</button>
+        </li>
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- PHẦN HEADER -->
+    <!-- PHẦN HEADER -->
       <header id="header">
         <div class="header__background">
           <div class="header__background--main"></div>
@@ -121,11 +107,12 @@
         </div>
       </header>
       <!-- END PHẦN HEADER -->
-      <div class="under-header">
-        <div class="gird">
-          <div class="under-header--border">
-            <p>There are more than 700 programming languages ​​in the world today and there may be more in the future.</p>
-           <div class="header__icon">
+    <!-- END PHẦN HEADER -->
+    <div class="under-header">
+      <div class="grid">
+        <div class="under-header--border">
+          <p>There are more than 700 programming languages ​​in the world today and there may be more in the future.</p>
+          <div class="header__icon">
             <i class="icon--code fa-brands fa-java"></i>
             <i class="icon--code fa-brands fa-js"></i>
             <i class="icon--code fa-brands fa-html5"></i>
@@ -134,281 +121,195 @@
             <i class="icon--code fa-brands fa-react"></i>
             <i class="icon--code fa-brands fa-aws"></i>
             <i class="icon--code fa-brands fa-sass"></i>
-           </div>
           </div>
         </div>
       </div>
-      <div id="main-content">
-        <!-- Phần Main1 -->
-        <div class="top">
-          <h1 class="title-font">01. Statistics</h1>
-        </div>
-        <div class="main-one--bieudo gird gird__row">
-          <div
-            id="piechart"
-            class="main-one--circle"
-            style="width: 500px; height: 500px"
-          ></div>
-          <div class="main-one--vanban"></div>
-        </div>
-
-        <!-- maintwo -->
-        <div class="top">
-          <h1 class="title-font">02. Basic knowledge</h1>
-        </div>
-        <div class="main-two--boxtext gird gird__row">
-          <div class="boxtext">
-            <div class="book">
-              <p class="text">
-                Java is a popular programming language. Java is used to develop
-                mobile apps, web apps,desktop apps, games and much more.
-              </p>
-              <div class="cover">
-                <p>JAVA</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="boxtext">
-            <div class="book">
-              <p class="text">
-                HTML is the standard markup language for Web pages. With HTML
-                you can create your own Website. HTML is easy to learn - You
-                will enjoy it!
-              </p>
-              <div class="cover">
-                <p>HTML</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="boxtext">
-            <div class="book">
-              <p class="text">
-                PHP is a server scripting language, and a powerful tool for
-                making dynamic and interactive Web pages. PHP is a widely-used,
-                free, and efficient alternative to competitors.
-              </p>
-              <div class="cover">
-                <p>PHP</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="boxtext">
-            <div class="book">
-              <p class="text">
-                Python is a popular programming language. Python can be used on
-                a server to create web applications.
-              </p>
-              <div class="cover">
-                <p>PYTHON</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="boxtext">
-            <div class="book">
-              <p class="text">
-                C++ is a popular programming language. C++ is used to create
-                computer programs, and is one of the most used language in game
-                development.
-              </p>
-              <div class="cover">
-                <p>C++</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="boxtext">
-            <div class="book">
-              <p class="text">
-                JavaScript is the world's most popular programming language.
-                JavaScript is the programming language of the Web. JavaScript is
-                easy to learn. This tutorial will teach you JavaScript from
-                basic to advanced.
-              </p>
-              <div class="cover">
-                <p>JAVASCRIPT</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="boxtext">
-            <div class="book">
-              <p class="text">
-                C# (C-Sharp) is a programming language developed by Microsoft
-                that runs on the .NET Framework. C# is used to develop web apps,
-                desktop apps, mobile apps, games and much more.
-              </p>
-              <div class="cover">
-                <p>C#</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="boxtext">
-            <div class="book">
-              <p class="text">
-                MySQL is a widely used relational database management system
-                (RDBMS). MySQL is free and open-source. MySQL is ideal for both
-                small and large applications.
-              </p>
-              <div class="cover">
-                <p>MYSQL</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- MainThree -->
-        <div class="top">
-          <h1 class="title-font">03. vchvsdh</h1>
-        </div>
-        <div class="main-three background-main">
-          <section class="main-three--information gird gird__row">
-            <section class="information infomation--left gird__column">
-              <div class="infomation--left--box">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Molestiae facilis veritatis itaque esse amet laborum nihil eaque
-                sint eos, aspernatur modi minus voluptatum quam vero omnis
-                perspiciatis tempore aut similique.
-              </div>
-              <div class="infomation--left--box">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                consectetur ad obcaecati, dolor sequi nesciunt facilis optio,
-                vitae impedit voluptatibus doloremque itaque minus consequuntur?
-                Cum dolores harum a accusamus suscipit!
-              </div>
-              <div class="infomation--left--box">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non,
-                omnis laboriosam aut ab consequatur consectetur repudiandae,
-                numquam quos atque aspernatur alias nemo voluptatum distinctio.
-                Possimus sapiente numquam quasi in expedita!
-              </div>
-              <div class="infomation--left--box">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur mollitia laudantium doloribus iure quaerat
-                distinctio animi sed a. Minima et quidem natus voluptatibus non
-                inventore eligendi id similique tempore adipisci!
-              </div>
-              <div class="infomation--left--box">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
-                sint animi voluptas facere perspiciatis nulla ipsam eveniet
-                soluta rerum vero magnam assumenda, maxime quos! Doloremque
-                aspernatur nam minima natus amet?
-              </div>
-            </section>
-            <section
-              class="information infomation--right gird__column"
-            ></section>
-          </section>
-        </div>
-
-        <!-- MainFive -->
-        <div class="top">
-          <h1 class="title-font">05. vchvsdh</h1>
-        </div>
-        <div class="main-five gird gird__row">
-          <div class="img--box--obj gird__column">
-            <div class="img--box img--box--girl"></div>
-            <div class="img--box img--box--boy"></div>
-            <div class="img--box img--box--child"></div>
-          </div>
-          <div class="plan">
-            <div class="inner">
-              <span class="pricing">
-                <span> $49 <small>/ m</small> </span>
-              </span>
-              <p class="title">Professional</p>
-              <p class="info">
-                This plan is for those who have a team already and running a
-                large business.
-              </p>
-              <ul class="features">
-                <li>
-                  <span class="icon">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </span>
-                  <span><strong>20</strong> team members</span>
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </span>
-                  <span>Plan <strong>team meetings</strong></span>
-                </li>
-                <li>
-                  <span class="icon">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </span>
-                  <span>File sharing</span>
-                </li>
-              </ul>
-              <div class="action">
-                <a class="button" href="#"> Choose plan </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-       <!-- MainFour -->
-       <div class="top">
-        <h1 class="title-font">04. Reviews</h1>
-      </div>
-      <div class="main-four">
-        <div class="gird gird__column">
-          <div class="content--four">
-            <div class="box box--one">
-              <h1 class="students title-font text">What our <span style="color:rgb(219, 112, 147);"><ins class="students title-font">Students</ins></span> say about us</h1>
-              <div class="moves moves--ten">
-                <button class="left--ten"><i class="icon_main icon_button fa-solid fa-chevron-left"></i></button>
-                <button class="right--ten"><i class="icon_main icon_button fa-solid fa-chevron-right"></i></button>
-
-              </div>
-            </div>
-            <div class="box">
-              <div class="shadow">
-                <div class="aqua">
-                  <div class="aqua_img--one"></div>
-                  <div class="aqua_label">
-                    <p class="aqua_label--label"><b>Trà Anh Thơ</b></p>
-                    <p class="aqua_label--label" style="color: rgb(219, 112, 147);">Senior Developer</p>
-                  </div>
-                </div>
-                <p class="text aqua_label--label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque ullam sapiente quos vel. Possimus distinctio aliquid aut rem nemo aliquam, doloremque unde. Quis eligendi error ut repellendus cumque non.</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="shadow">
-                <div class="aqua gird--center--row">
-                  <div class="aqua_img--two"></div>
-                  <div class="aqua_label">
-                    <p class="aqua_label--label"><b>mai cồ chết sình</b></p>
-                    <p class="aqua_label--label" style="color: rgb(219, 112, 147);">Data Analyst</p>
-                  </div>
-                </div>
-                <p class="text aqua_label--label">Magni non obcaecati sit corporis, architecto itaque fugit voluptatem mollitia eius ratione modi praesentium tempora pariatur laborum, enim totam repellendus a quia voluptatibus, officia odio voluptate. Unde, blanditiis? Debitis, possimus?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <footer id="footer">
-        <div class="footer--background">
-          <div class="gird gird__row">
-
-
-
-          </div>
-        </div>
-      </footer>
     </div>
-  </body>
+    <div id="main-content">
+      <!-- Phần Main1 -->
+      <div class="top">
+        <h1 class="title-font">01. Statistics</h1>
+      </div>
+      <div class="main-one--bieudo grid flex-row">
+        <div
+          id="piechart"
+          class="main-one--circle"
+          style="width: 500px; height: 500px"
+        ></div>
+        <div class="main-one--vanban"></div>
+      </div>
+
+      <!-- maintwo -->
+      <div class="top">
+        <h1 class="title-font">02. Basic knowledge</h1>
+      </div>
+      <div class="main-two--boxtext grid flex-row">
+        <div class="boxtext">
+          <div class="book">
+            <p class="text">
+              Java is a popular programming language. Java is used to develop
+              mobile apps, web apps,desktop apps, games and much more.
+            </p>
+            <div class="cover">
+              <p>JAVA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxtext">
+          <div class="book">
+            <p class="text">
+              HTML is the standard markup language for Web pages. With HTML
+              you can create your own Website. HTML is easy to learn - You
+              will enjoy it!
+            </p>
+            <div class="cover">
+              <p>HTML</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxtext">
+          <div class="book">
+            <p class="text">
+              PHP is a server scripting language, and a powerful tool for
+              making dynamic and interactive Web pages. PHP is a widely-used,
+              free, and efficient alternative to competitors.
+            </p>
+            <div class="cover">
+              <p>PHP</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxtext">
+          <div class="book">
+            <p class="text">
+              Python is a popular programming language. Python can be used on
+              a server to create web applications.
+            </p>
+            <div class="cover">
+              <p>PYTHON</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxtext">
+          <div class="book">
+            <p class="text">
+              C++ is a popular programming language. C++ is used to create
+              computer programs, and is one of the most used language in game
+              development.
+            </p>
+            <div class="cover">
+              <p>C++</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxtext">
+          <div class="book">
+            <p class="text">
+              JavaScript is the world's most popular programming language.
+              JavaScript is the programming language of the Web. JavaScript is
+              easy to learn. This tutorial will teach you JavaScript from
+              basic to advanced.
+            </p>
+            <div class="cover">
+              <p>JAVASCRIPT</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxtext">
+          <div class="book">
+            <p class="text">
+              C# (C-Sharp) is a programming language developed by Microsoft
+              that runs on the .NET Framework. C# is used to develop web apps,
+              desktop apps, mobile apps, games and much more.
+            </p>
+            <div class="cover">
+              <p>C#</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="boxtext">
+          <div class="book">
+            <p class="text">
+              SQL is a standard language for storing, manipulating and
+              retrieving data in databases. Our SQL tutorial will teach you
+              how to use SQL in: MySQL, SQL Server, MS Access, Oracle, Sybase,
+              Informix, Postgres, and other database systems.
+            </p>
+            <div class="cover">
+              <p>SQL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="top">
+        <h1 class="title-font">03. Free courses</h1>
+      </div>
+      <div class="main-three--courses grid flex-row">
+        <div class="courses-item">
+          <a href=""><img src="./assets/img/C.png" alt="" class="img" /></a>
+          <h2 class="title-font">C++ Basic</h2>
+          <p class="main-three--courses-item-text">A <a href="">Beginner's</a> course for those who want to start with C++</p>
+        </div>
+        <div class="courses-item">
+          <a href=""><img src="./assets/img/js.png" alt="" class="img" /></a>
+          <h2 class="title-font">Javascript Basic</h2>
+          <p class="main-three--courses-item-text">A <a href="">Beginner's</a> course for those who want to start with JavaScript</p>
+        </div>
+        <div class="courses-item">
+          <a href=""><img src="./assets/img/java.png" alt="" class="img" /></a>
+          <h2 class="title-font">Java Basic</h2>
+          <p class="main-three--courses-item-text">A <a href="">Beginner's</a> course for those who want to start with Java</p>
+        </div>
+        <div class="courses-item">
+          <a href=""><img src="./assets/img/html.png" alt="" class="img" /></a>
+          <h2 class="title-font">HTML Basic</h2>
+          <p class="main-three--courses-item-text">A <a href="">Beginner's</a> course for those who want to start with HTML</p>
+        </div>
+        <div class="courses-item">
+          <a href=""><img src="./assets/img/php.png" alt="" class="img" /></a>
+          <h2 class="title-font">PHP Basic</h2>
+          <p class="main-three--courses-item-text">A <a href="">Beginner's</a> course for those who want to start with PHP</p>
+        </div>
+        <div class="courses-item">
+          <a href=""><img src="./assets/img/react.png" alt="" class="img" /></a>
+          <h2 class="title-font">ReactJS Basic</h2>
+          <p class="main-three--courses-item-text">A <a href="">Beginner's</a> course for those who want to start with ReactJS</p>
+        </div>
+        <div class="courses-item">
+          <a href=""><img src="./assets/img/aws.png" alt="" class="img" /></a>
+          <h2 class="title-font">AWS Basic</h2>
+          <p class="main-three--courses-item-text">A <a href="">Beginner's</a> course for those who want to start with AWS</p>
+        </div>
+        <div class="courses-item">
+          <a href=""><img src="./assets/img/sass.png" alt="" class="img" /></a>
+          <h2 class="title-font">SASS Basic</h2>
+          <p class="main-three--courses-item-text">A <a href="">Beginner's</a> course for those who want to start with SASS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h3 class="title-font">MagicCode</h3>
+    <p>
+      MagicCode is a product that supports self-study and coding practice.
+      MagicCode helps to bring back high productivity for programmers with
+      high quality documents.
+    </p>
+    <div class="footer__icon">
+      <i class="icon--footer fa-brands fa-facebook"></i>
+      <i class="icon--footer fa-brands fa-instagram"></i>
+      <i class="icon--footer fa-brands fa-linkedin"></i>
+      <i class="icon--footer fa-brands fa-youtube"></i>
+    </div>
+    <p>© 2023 MagicCode All rights reserved.</p>
+  </footer>
+</body>
 </html>

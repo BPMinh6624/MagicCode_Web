@@ -548,3 +548,135 @@ a {
   width: 70rem;
   border-radius: 1rem;
 }/*# sourceMappingURL=index.css.map */
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar__item {
+  list-style: none;
+}
+
+.navbar__item .item {
+  margin: 0 10px;
+}
+
+.navbar__item .header__a__item {
+  text-decoration: none;
+  color: rgb(219, 112, 147);
+}
+
+.navbar__item .icon_main {
+  font-size: 1.5em;
+}
+
+/* Header Styles */
+#header {
+  position: relative;
+  height: 100vh;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__background--main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./assets/img/header-background.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.header__background--content {
+  text-align: center;
+  color: #fff;
+}
+
+.header__title {
+  margin-bottom: 20px;
+}
+
+.header__title .title-font {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+}
+
+.header__title .title--span {
+  font-size: 1.2em;
+}
+
+/* Main Content Styles */
+#main-content {
+  padding: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  text-align: center;
+}
+
+.title-font {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.main-one--bieudo, .main-two--boxtext, .main-three--courses {
+  margin: 20px 0;
+}
+
+.courses-item {
+  margin: 10px;
+  text-align: center;
+}
+
+.courses-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.footer__icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer__icon i {
+  margin: 0 5px;
+}
